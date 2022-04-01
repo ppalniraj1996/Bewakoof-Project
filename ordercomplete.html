@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Complete</title>
+    <link rel="stylesheet" href="./style/ordercomplete.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+   
+    <script
+    src="https://kit.fontawesome.com/f1eae3bf56.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="mainhead">
+          <div class="mainheadrow">
+            <div>
+              <a href="home.html"> <img
+                src="https://images.bewakoof.com/logos/bewakoof-logo-og.png"
+                alt=""
+              /></a>
+             
+            </div>
+  
+            <div>
+              <div style="display: inline-block">
+                <span>MEN</span>
+  
+                <a href="women.html"> <span>WOMEN</span></a>
+              </div>
+            </div>
+            <div>
+              <form action="">
+                <i id="search" class="fas fa-search"></i>
+                <input
+                  class="search2"
+                  type="text"
+                  placeholder="Search by product, category or collection"
+                />
+                <i class="icon"></i>
+              </form>
+            </div>
+            <div>
+              <span
+                ><a><i class="fas fa-grip-lines-vertical"></i></a
+              ></span>
+              <div>
+                <a href="login.html"> <span id="tag"> Login</span> </a>
+              </div>
+  
+              <span
+                ><a
+                  href="
+              login.html"
+                  ><i class="far fa-heart"></i></a
+              ></span>
+              <span
+                ><a href="cart.html"><i class="fas fa-shopping-bag"></i></a
+              ></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+   <div class="box">
+       
+          <div>
+              <div id="refer_earn">
+                  <img style="width: 350px; height: 290px;" src="	https://images.bewakoof.com/web/discounts-and-offers-1605624171.gif
+                " alt="">
+            </div>
+
+            <div style="margin-left: 3%;">
+                <div>
+                    <img style="width: 1170px; height: 190px;" src="	https://images.bewakoof.com/web/group-3-2x-1601556414.png" alt="">
+
+                    <h4>REFER AND EARN</h4>
+
+                    <p>Invite your friends & get upto Rs.125 in </br> Bewakoof wallet.</p>
+                </div>
+            </div>
+
+
+            <div style="margin-left: 900px; margin-top: -110px;"> 
+                <h5 style="font-size: 15px;">Share Via</h5>
+             </div>
+
+             <div style="display: flex; margin-left: 850px;">
+                <div>
+                    <img class="img_size" src="https://images.bewakoof.com/web/facebook-1602238313.png">
+
+                    <h5>Facebook</h5>
+                </div>
+
+                <div style="margin-left: 10px; margin-right: 14px;">
+                    <img class="img_size" src="https://images.bewakoof.com/web/twitter-1602238314.png">
+
+                    <h5>Twitter</h5>
+                </div>
+
+                <div>
+                    <img class="img_size" src="	https://images.bewakoof.com/web/copy-link-icon-1602238313.png">
+
+                    <h5>Copy Link</h5>
+                </div>
+
+             </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 5%; font-size: 16px;">
+            We think you'd like these
+          </div>
+
+          <div style="text-align: center; margin-top: 4%; font-size: 16px;">
+            Track and manage all your orders
+          </div>
+
+          <div>
+              <button>View Orders</button>
+          </div>
+   </div>
+</body>
+</html>
+
+
+<script>
+ let tag = document.getElementById("tag")
+    console.log(tag)
+  let users = JSON.parse(localStorage.getItem("users")) 
+  let name=(users[users.length-1].Name)
+  tag.innerHTML=name
+  console.log(name)
+</script>
